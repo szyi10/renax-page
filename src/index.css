@@ -1,3 +1,74 @@
+:root {
+  --primary: #f5b754;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    --bs-gutter-x: 1.5rem;
+    width: 100%;
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 375px) {
+    .container {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  .button {
+    @apply py-4 px-10 bg-primary border border-primary rounded-[30px] text-sm font-light text-center flex items-center gap-4 text-dark hover:bg-white hover:border-white outline-none;
+    transition: border-color 300ms ease, transform 300ms ease,
+      background-color 300ms ease, color 300ms ease;
+    transform-style: preserve-3d;
+  }
+}
+
+.homeSwiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 1px solid #fff;
+  opacity: 100;
+}
+
+.homeSwiper .swiper-pagination-bullet:hover {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+}
+
+.homeSwiper .swiper-pagination-bullet-active {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+}

@@ -7,6 +7,10 @@ export default {
       sans: "Outfit",
     },
     extend: {
+      colors: {
+        primary: "#f5b754",
+        dark: "#1b1b1b",
+      },
       screens: {
         xs: "375px",
       },
