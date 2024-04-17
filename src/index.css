@@ -1,5 +1,6 @@
 :root {
   --primary: #f5b754;
+  color-scheme: dark;
 }
 
 @tailwind base;
@@ -52,6 +53,49 @@
     transition: border-color 300ms ease, transform 300ms ease,
       background-color 300ms ease, color 300ms ease;
     transform-style: preserve-3d;
+  }
+
+  .curv-button {
+    @apply absolute left-0 bottom-0 text-center bg-dark;
+    width: 85px;
+    height: 85px;
+    line-height: 55px;
+  }
+
+  .curv-button-link {
+    @apply absolute rounded-full;
+    top: 15px;
+    left: 12px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .curv-button-icon {
+    @apply border border-primary rounded-full flex items-center justify-center hover:bg-primary;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    transition: border-color 300ms ease, transform 300ms ease,
+      background-color 300ms ease, color 300ms ease;
+    transform-style: preserve-3d;
+  }
+
+  .curv-left-top {
+    @apply absolute;
+    top: -24px;
+    left: -1px;
+    transform: rotate(270deg);
+  }
+
+  .curv-right-bottom {
+    @apply absolute;
+    bottom: -1px;
+    right: -24px;
+    transform: rotate(270deg);
+  }
+
+  .text-small-primary {
+    @apply text-primary text-xs font-light uppercase tracking-[6px];
   }
 }
 

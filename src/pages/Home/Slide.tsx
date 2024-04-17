@@ -29,7 +29,7 @@ const Slide = ({ data }: SlideProps) => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
-                className="text-primary text-xs font-light uppercase tracking-[6px]"
+                className="text-small-primary"
               >
                 * Premium
               </motion.h6>
