@@ -43,8 +43,9 @@ const Navbar = () => {
         <div
           className={twMerge(
             "absolute top-[181%] left-0 flex-1 items-center justify-end gap-7 lg:flex lg:static transition-all lg:opacity-100 lg:bg-transparent",
-            !navOpen && "opacity-0 w-full",
-            navOpen && "opacity-100 bg-neutral-800 w-full"
+            !navOpen &&
+              "opacity-0 w-full pointer-events-none lg:pointer-events-auto",
+            navOpen && "opacity-100 bg-neutral-800 w-full pointer-events-auto"
           )}
         >
           <div className="flex flex-col px-5 py-8 gap-6 lg:p-0 lg:flex-row lg:items-center lg:gap-5">
