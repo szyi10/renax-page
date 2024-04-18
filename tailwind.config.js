@@ -6,6 +6,9 @@ export default {
     fontFamily: {
       sans: "Outfit",
     },
+    screens: {
+      lg: "992px",
+    },
     extend: {
       colors: {
         primary: "#f5b754",

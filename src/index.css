@@ -7,7 +7,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  button,
+  a {
+    @apply transition-effect;
+  }
+}
+
 @layer components {
+  .transition-effect {
+    transition: border-color 300ms ease, transform 300ms ease,
+      background-color 300ms ease, color 300ms ease;
+    transform-style: preserve-3d;
+  }
+
   .container {
     --bs-gutter-x: 1.5rem;
     width: 100%;
@@ -49,10 +62,7 @@
   }
 
   .button {
-    @apply py-4 px-10 bg-primary border border-primary rounded-[30px] text-sm font-light text-center flex items-center gap-4 text-dark hover:bg-white hover:border-white outline-none;
-    transition: border-color 300ms ease, transform 300ms ease,
-      background-color 300ms ease, color 300ms ease;
-    transform-style: preserve-3d;
+    @apply py-4 px-10 bg-primary border border-primary rounded-[30px] text-sm font-light text-center flex items-center gap-4 text-dark hover:bg-white hover:border-white outline-none transition-effect;
   }
 
   .curv-button {
@@ -71,13 +81,10 @@
   }
 
   .curv-button-icon {
-    @apply border border-primary rounded-full flex items-center justify-center hover:bg-primary;
+    @apply border border-primary rounded-full flex items-center justify-center hover:bg-primary  transition-effect;
     width: 60px;
     height: 60px;
     font-size: 20px;
-    transition: border-color 300ms ease, transform 300ms ease,
-      background-color 300ms ease, color 300ms ease;
-    transform-style: preserve-3d;
   }
 
   .curv-left-top {

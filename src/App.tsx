@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react"
 import { Routes, Route } from "react-router-dom"
+import Navbar from "./components/Navbar"
 
 const HomePage = lazy(() => import("./pages/Home/Home"))
 const AboutPage = lazy(() => import("./pages/About/About"))
@@ -8,14 +9,17 @@ const ServicesPage = lazy(() => import("./pages/Services/Services"))
 
 const App = () => {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/cars" element={<CarsPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-      </Routes>
-    </Suspense>
+    <>
+      <Navbar />
+      <Suspense fallback={<p>Loading...</p>}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/cars" element={<CarsPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+        </Routes>
+      </Suspense>
+    </>
   )
 }
 
