@@ -11,7 +11,7 @@ import "swiper/css/pagination"
 const Slider = () => {
   const pagination: PaginationOptions = {
     clickable: true,
-    renderBullet: (index, className) => {
+    renderBullet: (_index, className) => {
       return `<span class="${className}"></span>`
     },
   }
