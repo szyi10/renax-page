@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react"
 import { Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
+import Clients from "./components/Clients"
+import Footer from "./components/Footer"
 
 const HomePage = lazy(() => import("./pages/Home/Home"))
 const AboutPage = lazy(() => import("./pages/About/About"))
@@ -18,6 +20,8 @@ const App = () => {
           <Route path="/cars" element={<CarsPage />} />
           <Route path="/services" element={<ServicesPage />} />
         </Routes>
+        <Clients />
+        <Footer />
       </Suspense>
     </>
   )

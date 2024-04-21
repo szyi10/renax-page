@@ -87,6 +87,12 @@
     font-size: 20px;
   }
 
+  .curv-step-number {
+    @apply border border-neutral-800 bg-neutral-800 rounded-full flex items-center justify-center text-sm font-bold;
+    width: 60px;
+    height: 60px;
+  }
+
   .curv-left-top {
     @apply absolute;
     top: -24px;
@@ -101,8 +107,26 @@
     transform: rotate(270deg);
   }
 
+  .curv-left-top-flip {
+    @apply absolute;
+    top: -2px;
+    left: -20px;
+    transform: rotate(90deg);
+  }
+
+  .curv-right-bottom-flip {
+    @apply absolute;
+    bottom: -25px;
+    right: -2px;
+    transform: rotate(90deg);
+  }
+
   .text-small-primary {
     @apply text-primary text-xs font-light uppercase tracking-[6px];
+  }
+
+  .fleetSwiper.swiper {
+    @apply max-lg:container;
   }
 }
 

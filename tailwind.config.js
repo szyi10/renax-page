@@ -25,6 +25,10 @@ export default {
       backgroundImage: {
         "book-pattern":
           "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slider/2.jpg)",
+        "promo-pattern":
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slider/1.jpg)",
+        "message-pattern":
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slider/3.jpg)",
       },
     },
   },
