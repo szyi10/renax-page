@@ -4,6 +4,7 @@ import BookSection from "../../components/sections/BookSection"
 import PromoSection from "../../components/sections/PromoSection"
 import ServicesCards from "./ServicesCards"
 import OtherServices from "./OtherServices"
+import Clients from "../../components/Clients"
 
 const Services = () => {
   return (
@@ -20,6 +21,7 @@ const Services = () => {
       <BookSection />
       <OtherServices />
       <PromoSection />
+      <Clients />
     </>
   )
 }

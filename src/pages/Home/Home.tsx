@@ -8,6 +8,7 @@ import TestimonialsSection from "../../components/sections/TestimonialsSection"
 import MessageSection from "../../components/sections/MessageSection"
 import Separator from "../../components/Separator"
 import BookSection from "../../components/sections/BookSection"
+import Clients from "../../components/Clients"
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <PromoSection />
       <TestimonialsSection />
       <MessageSection />
+      <Clients />
     </>
   )
 }

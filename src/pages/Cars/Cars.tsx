@@ -1,3 +1,4 @@
+import Clients from "../../components/Clients"
 import SectionHeader from "../../components/SectionHeader"
 import Separator from "../../components/Separator"
 import CarsGrid from "./CarsGrid"
@@ -14,6 +15,7 @@ const Cars = () => {
       />
       <Separator />
       <CarsGrid />
+      <Clients />
     </>
   )
 }

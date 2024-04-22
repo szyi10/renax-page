@@ -1,3 +1,4 @@
+import Clients from "../../components/Clients"
 import SectionHeader from "../../components/SectionHeader"
 import Separator from "../../components/Separator"
 import AboutSection from "../../components/sections/AboutSection"
@@ -23,6 +24,7 @@ const About = () => {
       <Separator />
       <Experts />
       <MessageSection />
+      <Clients />
     </>
   )
 }
