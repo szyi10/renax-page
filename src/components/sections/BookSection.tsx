@@ -1,4 +1,4 @@
-const Book = () => {
+const BookSection = () => {
   return (
     <section className="relative py-32 bg-book-pattern bg-left-top bg-cover bg-fixed ">
       <div className="container">
@@ -52,4 +52,4 @@ const Book = () => {
   )
 }
 
-export default Book
+export default BookSection

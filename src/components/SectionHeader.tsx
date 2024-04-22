@@ -18,7 +18,7 @@ const SectionHeader = ({
   return (
     <section
       className={twMerge(
-        "h-[70vh] bg-center bg-cover",
+        "h-[70vh] bg-center bg-fill",
         pattern && `bg-${pattern}-pattern`
       )}
     >

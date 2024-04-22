@@ -1,5 +1,4 @@
 import Slider from "./Slider"
-import Book from "./Book"
 import Fleet from "./Fleet"
 import Category from "./Category"
 import Steps from "./Steps"
@@ -8,13 +7,14 @@ import PromoSection from "../../components/sections/PromoSection"
 import TestimonialsSection from "../../components/sections/TestimonialsSection"
 import MessageSection from "../../components/sections/MessageSection"
 import Separator from "../../components/Separator"
+import BookSection from "../../components/sections/BookSection"
 
 const Home = () => {
   return (
     <>
       <Slider />
       <AboutSection withButton={true} />
-      <Book />
+      <BookSection />
       <Fleet />
       <Separator />
       <Category />

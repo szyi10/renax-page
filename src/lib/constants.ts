@@ -213,3 +213,36 @@ export const expertsTeam = [
     position: "Sales Consultant",
   },
 ]
+
+export const servicesCards = [
+  {
+    title: "Corporate Car Rental",
+    text: "Lorem ipsum dolor sit amet the consectetur adipiscing elit entesque hendrerit elit nisan lacinia feugiat nunc eu aucton.",
+    number: 1,
+  },
+  {
+    title: "Car Rental with Driver",
+    text: "Lorem ipsum dolor sit amet the consectetur adipiscing elit entesque hendrerit elit nisan lacinia feugiat nunc eu aucton.",
+    number: 2,
+  },
+  {
+    title: "Airport Transfer",
+    text: "Lorem ipsum dolor sit amet the consectetur adipiscing elit entesque hendrerit elit nisan lacinia feugiat nunc eu aucton.",
+    number: 3,
+  },
+  {
+    title: "Fleet Leasing",
+    text: "Lorem ipsum dolor sit amet the consectetur adipiscing elit entesque hendrerit elit nisan lacinia feugiat nunc eu aucton.",
+    number: 4,
+  },
+  {
+    title: "VIP Transfer",
+    text: "Lorem ipsum dolor sit amet the consectetur adipiscing elit entesque hendrerit elit nisan lacinia feugiat nunc eu aucton.",
+    number: 5,
+  },
+  {
+    title: "Private Transfer",
+    text: "Lorem ipsum dolor sit amet the consectetur adipiscing elit entesque hendrerit elit nisan lacinia feugiat nunc eu aucton.",
+    number: 6,
+  },
+]

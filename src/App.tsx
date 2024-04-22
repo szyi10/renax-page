@@ -23,6 +23,9 @@ const App = () => {
         <Clients />
         <Footer />
       </Suspense>
+      <div className="bg-aston-pattern hidden" />
+      <div className="bg-bentley-pattern hidden" />
+      <div className="bg-audi-pattern hidden" />
     </>
   )
 }
