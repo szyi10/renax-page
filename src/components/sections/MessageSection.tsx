@@ -1,4 +1,4 @@
-const Message = () => {
+const MessageSection = () => {
   return (
     <section className="relative py-32 bg-message-pattern bg-left-top bg-cover bg-fixed ">
       <div className="container">
@@ -27,4 +27,4 @@ const Message = () => {
   )
 }
 
-export default Message
+export default MessageSection

@@ -1,4 +1,4 @@
-const Promo = () => {
+const PromoSection = () => {
   return (
     <section className="relative py-32 bg-promo-pattern bg-left-top bg-cover bg-fixed ">
       <div className="container">
@@ -22,4 +22,4 @@ const Promo = () => {
   )
 }
 
-export default Promo
+export default PromoSection

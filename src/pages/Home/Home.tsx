@@ -1,28 +1,29 @@
 import Slider from "./Slider"
-import HomeAbout from "./HomeAbout"
 import Book from "./Book"
 import Fleet from "./Fleet"
 import Category from "./Category"
 import Steps from "./Steps"
-import Promo from "./Promo"
-import Testimonials from "./Testimonials"
-import Message from "./Message"
+import AboutSection from "../../components/sections/AboutSection"
+import PromoSection from "../../components/sections/PromoSection"
+import TestimonialsSection from "../../components/sections/TestimonialsSection"
+import MessageSection from "../../components/sections/MessageSection"
+import Separator from "../../components/Separator"
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Slider />
-      <HomeAbout />
+      <AboutSection withButton={true} />
       <Book />
       <Fleet />
-      <div className="h-12 w-[2px] border-l border-l-primary mx-auto -my-5" />
+      <Separator />
       <Category />
-      <div className="h-12 w-[2px] border-l border-l-primary mx-auto -my-5" />
+      <Separator />
       <Steps />
-      <Promo />
-      <Testimonials />
-      <Message />
-    </div>
+      <PromoSection />
+      <TestimonialsSection />
+      <MessageSection />
+    </>
   )
 }
 

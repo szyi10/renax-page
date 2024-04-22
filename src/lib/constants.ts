@@ -180,3 +180,36 @@ export const clientsBar = [
     img: "/img/clients/8.png",
   },
 ]
+
+export const expertsTeam = [
+  {
+    name: "Margaret Nancy",
+    img: "/img/team/2.jpg",
+    position: "Sales Department",
+  },
+  {
+    name: "Mia Jane",
+    img: "/img/team/6.jpg",
+    position: "Finance Department",
+  },
+  {
+    name: "Emily Arla",
+    img: "/img/team/4.jpg",
+    position: "Sales Consultant",
+  },
+  {
+    name: "Dan Martin",
+    img: "/img/team/1.jpg",
+    position: "Sales Consultant",
+  },
+  {
+    name: "Olivia White",
+    img: "/img/team/5.jpg",
+    position: "Sales Consultant",
+  },
+  {
+    name: "Micheal Brown",
+    img: "/img/team/3.jpg",
+    position: "Sales Consultant",
+  },
+]

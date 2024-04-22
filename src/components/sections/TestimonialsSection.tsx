@@ -26,7 +26,7 @@ const TestimonialUser = ({ data }: { data: { name: string; img: string } }) => {
   )
 }
 
-const Testimonials = () => {
+const TestimonialsSection = () => {
   return (
     <section className="py-32">
       <div className="container">
@@ -95,4 +95,4 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+export default TestimonialsSection

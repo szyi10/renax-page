@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import CurvButton from "../../components/CurvButton"
+import CurvButton from "../CurvButton"
 
-const HomeAbout = () => {
+const AboutSection = ({ withButton = false }) => {
   return (
     <section className="py-32">
       <div className="container">
@@ -41,11 +41,13 @@ const HomeAbout = () => {
                   </div>
                 </li>
               </ul>
-              <div className="flex">
-                <Link to="/about" className="button">
-                  Read More <span className="ti-arrow-top-right"></span>
-                </Link>
-              </div>
+              {withButton && (
+                <div className="flex">
+                  <Link to="/about" className="button">
+                    Read More <span className="ti-arrow-top-right"></span>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
           <div className="flex-1">
@@ -66,4 +68,4 @@ const HomeAbout = () => {
   )
 }
 
-export default HomeAbout
+export default AboutSection
