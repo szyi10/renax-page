@@ -23,10 +23,10 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        <div className="bg-aston-pattern hidden" />
+        <div className="bg-bentley-pattern hidden" />
+        <div className="bg-audi-pattern hidden" />
       </Suspense>
-      <div className="bg-aston-pattern hidden" />
-      <div className="bg-bentley-pattern hidden" />
-      <div className="bg-audi-pattern hidden" />
     </>
   )
 }
