@@ -1,7 +1,6 @@
 import { twMerge } from "tailwind-merge"
 
 interface PatternTypes {
-  pattern: "aston" | "bentley" | "audi"
   title: string
   whiteText: string
   yellowText: string
@@ -9,19 +8,13 @@ interface PatternTypes {
 }
 
 const SectionHeader = ({
-  pattern,
   title,
   whiteText,
   yellowText,
   isCenter = true,
 }: PatternTypes) => {
   return (
-    <section
-      className={twMerge(
-        "h-[70vh] bg-center bg-fill",
-        pattern && `bg-${pattern}-pattern`
-      )}
-    >
+    <>
       <div
         className={twMerge(
           "container h-full flex flex-col justify-center",
@@ -33,7 +26,7 @@ const SectionHeader = ({
           {whiteText} <span className="text-primary">{yellowText}</span>
         </h2>
       </div>
-    </section>
+    </>
   )
 }
 

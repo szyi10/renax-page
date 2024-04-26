@@ -10,13 +10,14 @@ import Experts from "./Experts"
 const About = () => {
   return (
     <>
-      <SectionHeader
-        isCenter={false}
-        pattern="aston"
-        title="Rentax"
-        whiteText="About"
-        yellowText="Us"
-      />
+      <section className="h-[70vh] bg-center bg-fill bg-aston-pattern">
+        <SectionHeader
+          isCenter={false}
+          title="Rentax"
+          whiteText="About"
+          yellowText="Us"
+        />
+      </section>
       <Separator />
       <AboutSection />
       <PromoSection />

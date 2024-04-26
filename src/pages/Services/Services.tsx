@@ -9,13 +9,14 @@ import Clients from "../../components/Clients"
 const Services = () => {
   return (
     <>
-      <SectionHeader
-        isCenter={true}
-        pattern="bentley"
-        title="What we do"
-        whiteText="Our"
-        yellowText="Services"
-      />
+      <section className="h-[70vh] bg-center bg-fill bg-bentley-pattern">
+        <SectionHeader
+          isCenter={true}
+          title="What we do"
+          whiteText="Our"
+          yellowText="Services"
+        />
+      </section>
       <Separator />
       <ServicesCards />
       <BookSection />

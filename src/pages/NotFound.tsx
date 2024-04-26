@@ -4,13 +4,14 @@ import Separator from "../components/Separator"
 const NotFound = () => {
   return (
     <>
-      <SectionHeader
-        isCenter={true}
-        pattern="aston"
-        title="404 Page"
-        whiteText="Page not found"
-        yellowText=""
-      />
+      <section className="h-[70vh] bg-center bg-fill bg-aston-pattern">
+        <SectionHeader
+          isCenter={true}
+          title="404 Page"
+          whiteText="Page not found"
+          yellowText=""
+        />
+      </section>
       <Separator />
       <section className="py-32">
         <div className="container">

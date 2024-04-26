@@ -6,13 +6,15 @@ import CarsGrid from "./CarsGrid"
 const Cars = () => {
   return (
     <>
-      <SectionHeader
-        isCenter={true}
-        pattern="aston"
-        title="Select your car"
-        whiteText="Select"
-        yellowText="Luxury Car"
-      />
+      <section className="h-[70vh] bg-center bg-fill bg-aston-pattern">
+        <SectionHeader
+          isCenter={true}
+          title="Select your car"
+          whiteText="Select"
+          yellowText="Luxury Car"
+        />
+      </section>
+
       <Separator />
       <CarsGrid />
       <Clients />
